@@ -23,8 +23,11 @@
       "!node_modules/.cache/**"
     ],
 
-    "win": {
-      "target": "portable",
+    "mac": {
+      "target": [
+	  "dmg",
+	  "zip"
+	  ],
 	  "icon": "assets/app.ico"
     }
   }
