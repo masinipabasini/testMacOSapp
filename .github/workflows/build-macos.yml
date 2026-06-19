@@ -1,6 +1,6 @@
 name: Build macOS Electron App
 env:
-    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   run: npm run build
 on:
   push:
