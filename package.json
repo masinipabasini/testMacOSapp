@@ -1,0 +1,31 @@
+{
+  "name": "day-planner",
+  "version": "1.0.0",
+  "description": "Weekly planner",
+  "main": "index.js",
+
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+
+  "devDependencies": {
+    "electron": "^37.0.0",
+    "electron-builder": "^26.0.0"
+  },
+
+  "build": {
+    "appId": "com.dayplanner.app",
+    "productName": "day-planner",
+
+    "files": [
+      "**/*",
+      "!node_modules/.cache/**"
+    ],
+
+    "win": {
+      "target": "portable",
+	  "icon": "assets/app.ico"
+    }
+  }
+}
